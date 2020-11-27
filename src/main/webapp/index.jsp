@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <title>O QUE É A VIDA?</title>
+        <title>O QUE É A VIDA? ME RESPONDA POR FAVOR</title>
     </head>
     <body>
         <%
