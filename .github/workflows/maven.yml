@@ -23,6 +23,7 @@ jobs:
     - name: Build with Maven
       run: |
        mvn -B package --file pom.xml
+       heroku plugins:install java
        heroku war:deploy target/ProjetoMaven-1.0-SNAPSHOT.war --app sistema-empresarial
 
 
