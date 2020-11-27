@@ -22,9 +22,14 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      env: 
+      run: 
+        mvn -B package --file pom.xml  
+    - name: Login to Heroku Container registry
+      env:
        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: |
-        heroku login
-        mvn -B package --file pom.xml
-        heroku war:deploy target/ProjetoMaven-1.0-SNAPSHOT.war --app sistema-empresarial
+      run: heroku login
+    - name: Build and push
+      env:
+            HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+            HEROKU_APP_NAME: sistema-empresarial
+      run: heroku plugins:install java && heroku war:deploy target/ProjetoMaven-1.0-SNAPSHOT.war --app sistema-empresarial
