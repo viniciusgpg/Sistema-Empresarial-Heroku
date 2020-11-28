@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <title>O QUE É A VIDA? ME RESPONDA POR FAVOR</title>
+        <title>Tela principal</title>
     </head>
     <body>
         <%
@@ -43,7 +43,7 @@
                 <div style="margin-top: 20%;margin-bottom: -5%"></div>
                     <div clsas="BB1">
                         <button class="button button1" onclick="window.location.href='http://sistema-empresarial.herokuapp.com/Pagina_Login.jsp';">
-                            Logay
+                            Logar
                         </button>
                         </div>
                     <div style="margin:  40px;">
